@@ -1,0 +1,7 @@
+{
+  "userNameField": "#txtUsername",
+  "passwordField": "#txtPassword",
+  "loginBtn": "#btnLogin",
+  "loggedUserWelcomePane": "a#welcome",
+  "logoutBtn": "//a[text()='Logout']"
+}

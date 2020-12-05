@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"types": ["node", "@wdio/sync", "mocha"],
+		"target": "ES6",
+		"module": "commonjs",
+		"resolveJsonModule": true,
+		"strict": true,
+		"esModuleInterop": true
+	},
+	"compileOnSave": false,
+	"skipLibCheck": true,
+	"outDir": "dist",
+	"include": ["./src/tests/*.ts"],
+	"exclude": ["node_modules"]
+}
