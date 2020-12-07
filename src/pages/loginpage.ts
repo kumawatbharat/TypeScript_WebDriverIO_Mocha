@@ -33,7 +33,10 @@ class LoginPage extends BasePage {
 		this.welcomePanelDropDown.waitForDisplayed();
 		this.welcomePanelDropDown.click();
 		this.logoutBtn.waitForDisplayed();
-		this.logoutBtn.waitForEnabled();
+		browser.waitUntil(() => this.logoutBtn.isEnabled(), {
+			timeout: 5000,
+			timeoutMsg: `Logout btn is not unable to interact`,
+		});
 		this.logoutBtn.click();
 		this.userNameField.waitForDisplayed();
 		return this.userNameField.isDisplayed();

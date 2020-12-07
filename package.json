@@ -2,8 +2,7 @@
   "name": "uiautomation",
   "description": "UI Test Framework",
   "scripts": {
-    "localTest": "wdio ./config/local.conf.js",
-    "saucelabsTest": "USER=abc KEY=key wdio ./config/saucelabs.conf.js"
+    "localTest": "wdio ./config/local.conf.js"
   },
   "devDependencies": {
     "@wdio/cli": "^6.10.5",
